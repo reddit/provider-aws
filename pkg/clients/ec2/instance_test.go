@@ -573,6 +573,7 @@ func TestGenerateEC2RunInstancesInput(t *testing.T) {
 							DeleteOnTermination: aws.Bool(false),
 							Encrypted:           aws.Bool(false),
 							IOps:                aws.Int32(1),
+							ThroughputMBps:      aws.Int32(100),
 							KmsKeyID:            aws.String(keyName),
 							SnapshotID:          aws.String(snapshotID),
 							VolumeSize:          aws.Int32(1),
